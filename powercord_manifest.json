@@ -1,0 +1,8 @@
+{
+    "name": "BetterDefaultGlasscord(pywal)",
+    "description": "Improves The Basic Glasscord Theme using pywal colorschemes",
+    "version": "1.1",
+    "author": "Leeprky#2063, Hammer#8258",
+    "license": "MIT",
+    "theme": "theme.css"
+}

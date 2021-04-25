@@ -1,0 +1,137 @@
+/**
+ * @name BetterDefaultGlasscord
+ * @description This theme improves the basic glasscord template
+ * @author Leeprky#2063
+ * @version 1.1
+ * @source https://github.com/leeprky/BetterDefaultGlasscord
+ * @invite https://discord.gg/Ff3rqAYB89
+ * @authorLink hhttps://github.com/leeprky
+ */
+/*
+   Copyright 2020 AryToNeX
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+*/
+
+/* BlurpleColor */
+@import url(https://raw.githack.com/leeprky/MyThemesBasesStuffYeah/lode/alt-color.css);
+
+/* USRBG */
+@import url(https://discord-custom-covers.github.io/usrbg/dist/usrbg.css);
+
+/* Discord Font */
+@import url(https://ghostmander.github.io/discordfont/DiscordFont.css);
+
+/* BDG Import */
+@import url(https://raw.githack.com/leeprky/BetterDefaultGlasscord/main/source/source.css);
+
+/* Light Mode Warning */
+@import url(https://raw.githack.com/leeprky/MyThemesBasesStuffYeah/lode/LightModeWarning.css);
+
+:root{{
+	/* Here you can define properties for use with Glasscord. */
+
+	/* Windows-specific properties */
+	/* Blur mode. Available types: acrylic (strong blur), blurbehind (light blur), transparent */
+	--glasscord-win-blur: blurbehind;
+
+	/* macOS-specific properties */
+	/* Vibrancy mode */
+	--glasscord-macos-vibrancy: fullscreen-ui;
+
+	/* Linux-specific properties */
+	/* Should Glasscord send a request to your window compositor to blur behind Discord's window? */
+	/* It currently supports KWin only */
+	--glasscord-linux-blur: true;
+
+	/* The corner radius of the blurry background */
+	--glasscord-blur-corner-radius: 20px;
+
+	/* Discord-specific properties */
+	/* Custom (forced) titlebar */
+	/* native (default), windows, osx, linux (framed) */
+	--glasscord-titlebar: native;
+
+	/* USRBG Compatibility */
+	/* Please refer to https://github.com/Discord-Custom-Covers/usrbg */
+
+	/* Distance from the avatar container to the edge of the modal */
+	--usrbg-modal-x-offset: -34px;
+	--usrbg-modal-y-offset: -20px;
+
+	/* Maximum width / height of modal */
+	--usrbg-modal-width: 600px;
+	--usrbg-modal-height: 600px;
+}}
+
+/* --- */
+
+body{{
+	background-color: transparent;
+}}
+
+#app-mount{{
+	background-color: rgba({color0.rgb}, 0.9);
+	border-radius: 0;
+}}
+
+.theme-dark{{
+    --alt-color: {color5.rgb}; /* Changes The Blurple Parts Of Discord: Must be in RBG Formot (#, #, #) */
+    --spotify-color: #15db47; /* Changes The Global Spotify Colour */
+	--text-normal: #fff;
+	--text-muted: rgb(141, 141, 141); /* Muted Emblem/Svg Text */
+	--channels-default: {color14}; /* Normal Channel Text */
+	--interactive-muted: #56595c; /* Muted Text */
+	--interactive-normal: #fff; /* Text */
+	--background-primary: rgba({color0.rgb}, 1); /* Chatbox/Memberlist Colour */
+	--background-primary2: rgba({color0.rgb}, 0.9); /* Chatbox Colour Extra - Used in my extras */
+	--background-primary-alt: rgba({color6.rgb}, 0.9); /* Primary Secondary */
+	--background-secondary: rgba({color8.rgb}, 0.411); /* Serverlist/Channelist Colour */
+	--background-secondary2: rgba({color9.rgb}, 0.192); /* Serverlist/Channelist Colour - Used in my extras */
+	--background-secondary-chat: rgba(224, 27, 27, 0.226); /* Idk nothing lol */
+	--background-secondary-alt: var(--background-secondary); /* Name/ Config area below channels */
+	--background-tertiary: #00000007; /* CHANGE THIS TO MAKE DARKER/LIGHTER BACKGROUND GLOBALLY - MAY BREAK SEVERLIST COLOR THOUGH */
+	--background-accent: {color6};
+	--background-serverlist: #00000000; /* Used For If --background-tertiary is too bright/dark */
+	--background-floating: rgba({color6.rgb}, 0.8); /* Floating boxes colour */
+	--background-logo: {color6}; /* Serverlist discord logo backdrops */
+	--background-attachments: {color8}; /* Embeds colour etc */
+	--background-search-bar: {color0}; /* Search bar in top right etc */
+	--background-chatbox: transparent; /* The chatbox colour */
+  --background-mentioned: #faa81a0a; /* Mentioned background colour */
+  --background-mentioned-hover: #faa81a18; /* Mentioned background colour on hover */
+	--background-switcher: var(--background-secondary);
+	--deprecated-card-bg: transparent;
+}}
+
+/* --- */
+/* Anything Extra You Want To Add Below */
+/* -- */
+.theme-dark .root-lgCeng {{
+	background-color: var(--background-primary);
+}}
+
+.theme-dark .footer-2gL1pp {{
+	background-color: var(--background-secondary);
+}}
+
+.colorRed-1TFJan.lookFilled-1Gx00P, .item-3HknzM[data-item-id=ADD_FRIEND]{{
+  background-color: var(--background-primary-alt) !important;
+}}
+.circleIconButton-1QV--U {{
+  color: var(--background-primary-alt);
+}}
+.circleIconButton-1QV--U.selected-1JjBPm {{
+  color: #fff;
+  background-color: var(--background-primary-alt);
+}}
