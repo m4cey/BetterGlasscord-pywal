@@ -93,7 +93,7 @@ body{{
 	--channels-default: {color14}; /* Normal Channel Text */
 	--interactive-muted: #56595c; /* Muted Text */
 	--interactive-normal: #fff; /* Text */
-	--background-primary: rgba({color0.rgb}, 1); /* Chatbox/Memberlist Colour */
+	--background-primary: rgba({color0.rgb}, 0.9); /* Chatbox/Memberlist Colour */
 	--background-primary2: rgba({color0.rgb}, 0.9); /* Chatbox Colour Extra - Used in my extras */
 	--background-primary-alt: rgba({color6.rgb}, 0.9); /* Primary Secondary */
 	--background-secondary: rgba({color8.rgb}, 0.411); /* Serverlist/Channelist Colour */
